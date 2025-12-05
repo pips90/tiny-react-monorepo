@@ -13,9 +13,9 @@ function App() {
         </Subtitle>
         <Actions>
           <SharedButton
-            buttonText="View the roadmap"
-            size="large"
-            onClick={() => console.log("Roadmap clicked")}
+            buttonText="Explore BarkWeaver"
+            size="small"
+            onClick={() => console.log("CTA clicked")}
           />
         </Actions>
       </Content>
