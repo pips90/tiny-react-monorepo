@@ -19,7 +19,7 @@ Error generating stack: `+u.message+`
   width: 75%;
 `;Sl.input`
   width: 100%;
-`;function uv(){return Rl.jsx(ev,{children:Rl.jsxs(nv,{children:[Rl.jsx(iv,{children:"BarkWeaver"}),Rl.jsx(cv,{children:"Welcome to BarkWeaver."}),Rl.jsx(fv,{children:"A home for the AuraCollar journey. More pages, stories, AND science are coming soon."}),Rl.jsx(sv,{children:Rl.jsx(av,{buttonText:"Explore BarkWeaver",size:"small",onClick:()=>console.log("CTA clicked")})})]})})}const ev=Sl.main`
+`;function uv(){return Rl.jsx(ev,{children:Rl.jsxs(nv,{children:[Rl.jsx(iv,{children:"BarkWeaver"}),Rl.jsx(cv,{children:"Welcome to BarkWeaver."}),Rl.jsx(fv,{children:"A home for the AuraCollar journey. More pages, stories, and science are coming soon."}),Rl.jsx(sv,{children:Rl.jsx(av,{buttonText:"Explore BarkWeaver",size:"small",onClick:()=>console.log("CTA clicked")})})]})})}const ev=Sl.main`
   min-height: 100vh;
   background: radial-gradient(circle at 20% 20%, #f3f6ff, #f9fbff 40%, #ffffff);
   color: #111827;
