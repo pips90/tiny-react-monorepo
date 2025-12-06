@@ -1,12 +1,11 @@
-import type { JestConfigWithTsJest } from "ts-jest";
-
-const config: JestConfigWithTsJest = {
-  testEnvironment: "jest-environment-jsdom",
+/** @type {import("jest").Config} */
+module.exports = {
   preset: "ts-jest/presets/default-esm",
   extensionsToTreatAsEsm: [".ts", ".tsx"],
+  testEnvironment: "jest-environment-jsdom",
   roots: ["<rootDir>/src"],
   moduleNameMapper: {
-    "\\.(css|less|scss|sass)$": "identity-obj-proxy",
+    "\\.(css|less|scss|sass)$": "<rootDir>/jest.styleMock.cjs",
     "^@pips90/ui$": "<rootDir>/../../packages/ui/src",
   },
   setupFilesAfterEnv: ["<rootDir>/src/setupTests.ts"],
@@ -15,9 +14,8 @@ const config: JestConfigWithTsJest = {
       "ts-jest",
       {
         useESM: true,
+        tsconfig: "<rootDir>/tsconfig.jest.json",
       },
     ],
   },
 };
-
-export default config;
