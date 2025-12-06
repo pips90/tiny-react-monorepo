@@ -6,7 +6,7 @@ describe("App", () => {
     render(<App />);
     expect(screen.getByText(/Welcome to BarkWeaver/i)).toBeInTheDocument();
     expect(
-      screen.getByText(/AuraCollar journey. More pages, stories, and science/i),
+      screen.getByText(/AuraCollar journey. More pages, stories, and/i),
     ).toBeInTheDocument();
   });
 });

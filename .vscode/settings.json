@@ -1,0 +1,4 @@
+{
+  "jest.jestCommandLine": "npx jest --config jest.config.cjs",
+  "jest.rootPath": "."
+}
