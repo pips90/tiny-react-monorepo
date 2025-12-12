@@ -8,7 +8,7 @@ module.exports = {
     "\\.(css|less|scss|sass)$": "<rootDir>/jest.styleMock.cjs",
     "^@pips90/ui$": "<rootDir>/../../packages/ui/src",
   },
-  setupFilesAfterEnv: ["<rootDir>/src/setupTests.ts"],
+  setupFilesAfterEnv: ["<rootDir>/src/jest.setup.ts"],
   transform: {
     "^.+\\.(ts|tsx)$": [
       "ts-jest",

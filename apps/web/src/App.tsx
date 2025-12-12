@@ -1,7 +1,11 @@
 import { SharedButton } from "@pips90/ui";
 import styled from "styled-components";
+import { Routes, Route, useNavigate } from "react-router-dom";
+import { LandingPage } from "./components/landing-page/LandingPage";
 
-function App() {
+const HomePage = () => {
+  const navigate = useNavigate();
+
   return (
     <Page>
       <Content>
@@ -15,11 +19,20 @@ function App() {
           <SharedButton
             buttonText="Explore BarkWeaver"
             size="small"
-            onClick={() => console.log("CTA clicked")}
+            onClick={() => navigate("/landing-page")}
           />
         </Actions>
       </Content>
     </Page>
+  );
+};
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/landing-page" element={<LandingPage />} />
+    </Routes>
   );
 }
 
