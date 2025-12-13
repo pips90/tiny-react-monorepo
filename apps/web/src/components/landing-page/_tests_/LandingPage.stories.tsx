@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { LandingPage } from "./LandingPage";
+import { LandingPage } from "../LandingPage";
 import { within, userEvent } from "@storybook/testing-library";
 import { expect } from "@storybook/jest";
 import { MemoryRouter } from "react-router-dom";

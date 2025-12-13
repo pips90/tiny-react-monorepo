@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import { LandingPage } from "./LandingPage";
+import { LandingPage } from "../LandingPage";
 import { render, screen } from "@testing-library/react";
 import { userEvent } from "@testing-library/user-event";
 
