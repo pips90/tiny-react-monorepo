@@ -6,9 +6,9 @@ export const LandingPage = () => {
   //   const navigate = useNavigate();
   return (
     <StyledLandinPageContainer>
-      <div>
-        <h2 style={{ textAlign: "center", color: "lightskyblue" }}>NavBar</h2>
-      </div>
+      <StyledNavBar>
+        <StyledNavFooterHeading style={{ textAlign: "center", color: "lightskyblue" }}>NavBar</StyledNavFooterHeading>
+      </StyledNavBar>
       <StyledLandingPageContentContainer>
         <StyledLandingPageContent>
           <StyledTagLine>
@@ -29,9 +29,9 @@ export const LandingPage = () => {
           </StyledDisclaimer>
         </StyledLandingPageContent>
       </StyledLandingPageContentContainer>
-      <div>
-        <h2 style={{ textAlign: "center", color: "lightskyblue" }}>Footer</h2>
-      </div>
+      <StyledFooter>
+        <StyledNavFooterHeading style={{ textAlign: "center", color: "lightskyblue" }}>Footer</StyledNavFooterHeading>
+      </StyledFooter>
     </StyledLandinPageContainer>
   );
 };
@@ -40,8 +40,18 @@ const StyledLandingPageContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.25rem;
-  margin: 1rem 1rem 0rem 1rem;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 640px;
+  margin: 1.5rem auto 0;
+
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 960px;
+  }
 `;
 
 const StyledPreOrderBtn = styled(SharedButton)`
@@ -78,41 +88,61 @@ const StyledLandinPageContainer = styled.div`
 
 const StyledLandingPageContentContainer = styled.div`
   display: flex;
-  flex-direction: row;
+  flex: 1;
   justify-content: center;
-  padding: 0 1rem 0 1rem;
+  align-items: center;
+  padding: 1.5rem 1.25rem 2rem;
   text-align: center;
-  margin: 0 24rem 0 24rem;
 `;
 
 const StyledTagLine = styled.h3`
-font-size: 2rem;
-font-family: "Times New Roman", Times, serif;
-font-weight: 300;
-margin-bottom: 0rem;
-color: #f7a781;
-span {
-  font-style: italic;
-}
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 300;
+  margin-bottom: 0rem;
+  color: #f7a781;
+
+  span {
+    font-style: italic;
+  }
 `;
 
 const StyledDisclaimer = styled.p`
-font-size: 1rem;
-font-family: "Times New Roman", Times, serif;
-font-weight: 300;
-color: #f7a781;
-
+  font-size: clamp(0.875rem, 1.6vw, 1rem);
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 300;
+  color: #f7a781;
 `;
 
 const StyledMainHeading = styled.h1`
-  font-size: 4rem;
+  font-size: clamp(2.25rem, 4vw, 3rem);
   font-family: "Times New Roman", Times, serif;
   font-weight: 500;
   margin-top: 0rem;
   color: #f7a781;
+  max-width: 22ch;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 1.15;
 
   span {
     font-style: italic;
     font-weight: 600;
   }
 `;
+
+const StyledNavBar = styled.div`
+text-align: center;
+h2 {
+  color: lightskyblue;
+  }
+`
+const StyledFooter = styled.div`
+text-align: center;
+h2 {
+  color: lightskyblue;
+  }
+`
+
+const StyledNavFooterHeading = styled.h2``
