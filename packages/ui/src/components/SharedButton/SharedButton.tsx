@@ -4,17 +4,19 @@ export interface SharedButtonProps {
   buttonText: string;
   size: "small" | "medium" | "large";
   onClick: () => void;
+  className?: string;
 }
 
 export const SharedButton = ({
   buttonText,
   size,
   onClick,
+  className,
 }: SharedButtonProps) => {
   if (size === "small") {
-    return <SmallButton onClick={onClick}>{buttonText}</SmallButton>;
+    return <SmallButton className={className} onClick={onClick}>{buttonText}</SmallButton>;
   } else if (size === "medium") {
-    return <MediumButton onClick={onClick}>{buttonText}</MediumButton>;
+    return <MediumButton className={className} onClick={onClick}>{buttonText}</MediumButton>;
   }
-  return <LargeButton onClick={onClick}>{buttonText}</LargeButton>;
+  return <LargeButton className={className} onClick={onClick}>{buttonText}</LargeButton>;
 };
