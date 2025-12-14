@@ -5,11 +5,11 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { storybookTest } from '@storybook/addon-vitest/vitest-plugin';
 import { playwright } from '@vitest/browser-playwright';
-const dirname = typeof __dirname !== 'undefined' ? __dirname : path.dirname(fileURLToPath(import.meta.url));
-
-// More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+const dirname = __dirname;
+
+// More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 
 // https://vite.dev/config/
 export default defineConfig({
