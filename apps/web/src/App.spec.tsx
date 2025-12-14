@@ -19,6 +19,6 @@ describe("App", () => {
       screen.getByText(/AuraCollar journey. More pages, stories, and/i)
     ).toBeVisible();
     await userEvent.click(ctaBtn);
-    expect(screen.getByText(/Landing Page/i)).toBeVisible();
+    expect(screen.getByText(/Finally know/i)).toBeVisible();
   });
 });
