@@ -149,4 +149,4 @@ h2 {
   display: flex;
   justify-content: center;
   margin-top: 8px;
-`;Iv.createRoot(document.getElementById("root")).render(ht.jsx(U.StrictMode,{children:ht.jsx(pp,{basename:"/tiny-react-monorepo",children:ht.jsx(wp,{})})}));
+`,Wp="/tiny-react-monorepo";Iv.createRoot(document.getElementById("root")).render(ht.jsx(U.StrictMode,{children:ht.jsx(pp,{basename:Wp,children:ht.jsx(wp,{})})}));
