@@ -9,7 +9,7 @@
     "postbuild": "cp dist/index.html dist/404.html",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "npm run build && gh-pages -d dist -b gh-pages -m \"deploy: web\"",
+    "deploy": "VITE_ROUTER_BASENAME=/tiny-react-monorepo npm run build && gh-pages -d dist -b gh-pages -m \"deploy: web\"",
     "test": "jest",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
