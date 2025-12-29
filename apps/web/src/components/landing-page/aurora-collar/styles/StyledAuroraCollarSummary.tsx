@@ -4,6 +4,7 @@ import { SharedButton } from "@pips90/ui";
 export const StyledAuroraCollarSummaryContainer = styled.div`
   display: flex;
   flex-direction: row;
+  border-top: 0.15rem solid #f7a781;
   gap: 2rem;
   width: 100%;
   margin-top: 4rem;
@@ -32,7 +33,8 @@ export const StyledSummaryImage = styled.img`
 export const StyledSummaryContent = styled.div`
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
+  margin-top: 2rem;
 `;
 
 export const StyledPreOrderBtn = styled(SharedButton)`
