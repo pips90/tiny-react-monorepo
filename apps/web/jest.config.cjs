@@ -6,6 +6,7 @@ module.exports = {
   roots: ["<rootDir>/src"],
   moduleNameMapper: {
     "\\.(css|less|scss|sass)$": "<rootDir>/jest.styleMock.cjs",
+    "\\.(jpg|jpeg|png|gif|webp|avif|svg)$": "<rootDir>/jest.fileMock.cjs",
     "^@pips90/ui$": "<rootDir>/../../packages/ui/src",
   },
   setupFilesAfterEnv: ["<rootDir>/src/jest.setup.ts"],
