@@ -2,8 +2,12 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+## Dev Environment
+To run dev: npm run dev --workspace @barkweaver/web
+
  ## Storybook Testing
  To run the ui: npm run storybook --workspace @barkweaver/web
+ To deploy stage: 
 
 
 Currently, two official plugins are available:
