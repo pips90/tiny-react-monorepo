@@ -1,4 +1,5 @@
 import { AuroraCollarSummary } from "./aurora-collar/AuroraCollarSummary";
+import { FeatureSection } from "./features-section/FeatureSection";
 import {
   StyledLandingPageContentContainer,
   StyledLandingPageContent,
@@ -30,6 +31,7 @@ export const LandingPageContent = () => {
           *Results may include excessive food demands and existential commentary
         </StyledDisclaimer>
         <AuroraCollarSummary />
+        <FeatureSection />
       </StyledLandingPageContent>
     </StyledLandingPageContentContainer>
   );
