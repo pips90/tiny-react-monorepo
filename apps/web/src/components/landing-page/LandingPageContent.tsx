@@ -1,4 +1,5 @@
 import { AuroraCollarSummary } from "./aurora-collar/AuroraCollarSummary";
+import { FeatureSection } from "./features-section/FeatureSection";
 import {
   StyledLandingPageContentContainer,
   StyledLandingPageContent,
@@ -6,6 +7,7 @@ import {
   StyledMainHeading,
   StyledPreOrderBtn,
   StyledDisclaimer,
+  StyledLandingSection,
 } from "./styles/StyledLandingPageContent";
 // import { useNavigate } from "react-router-dom";
 
@@ -14,22 +16,30 @@ export const LandingPageContent = () => {
   return (
     <StyledLandingPageContentContainer>
       <StyledLandingPageContent>
-        <StyledTagLine>
-          We create <span>technology</span> that understands.
-        </StyledTagLine>
-        <StyledMainHeading>
-          Finally know what your dog is <span>actually</span> thinking.
-        </StyledMainHeading>
-        <StyledPreOrderBtn
-          buttonText="Pre-Order Now"
-          size="small"
-          // onClick={() => navigate("/landing-page")}
-          onClick={() => console.log("Let's Waste our $$$$")}
-        />
-        <StyledDisclaimer>
-          *Results may include excessive food demands and existential commentary
-        </StyledDisclaimer>
-        <AuroraCollarSummary />
+        <StyledLandingSection>
+          <StyledTagLine>
+            We create <span>technology</span> that understands.
+          </StyledTagLine>
+          <StyledMainHeading>
+            Finally know what your dog is <span>actually</span> thinking.
+          </StyledMainHeading>
+          <StyledPreOrderBtn
+            buttonText="Pre-Order Now"
+            size="small"
+            // onClick={() => navigate("/landing-page")}
+            onClick={() => console.log("Let's Waste our $$$$")}
+          />
+          <StyledDisclaimer>
+            *Results may include excessive food demands and existential
+            commentary
+          </StyledDisclaimer>
+        </StyledLandingSection>
+        <StyledLandingSection>
+          <AuroraCollarSummary />
+        </StyledLandingSection>
+        <StyledLandingSection>
+          <FeatureSection />
+        </StyledLandingSection>
       </StyledLandingPageContent>
     </StyledLandingPageContentContainer>
   );
