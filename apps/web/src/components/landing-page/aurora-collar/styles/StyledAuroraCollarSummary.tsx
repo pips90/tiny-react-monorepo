@@ -4,7 +4,7 @@ import { SharedButton } from "@pips90/ui";
 export const StyledAuroraCollarSummaryContainer = styled.div`
   display: flex;
   flex-direction: row;
-  border-top: 0.15rem solid #f7a781;
+
   gap: 2rem;
   width: 100%;
   margin-top: 4rem;

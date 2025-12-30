@@ -88,3 +88,15 @@ export const StyledMainHeading = styled.h1`
     font-weight: 600;
   }
 `;
+
+export const StyledLandingSection = styled.section`
+  min-height: calc(
+    100vh - var(--nav-height, 72px) - var(--footer-height, 80px)
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 16px; /* tweak as needed */
+  box-sizing: border-box;
+`;

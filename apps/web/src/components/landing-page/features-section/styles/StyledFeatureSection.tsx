@@ -35,8 +35,7 @@ export const StyledPLines = styled.h3`
 export const StyledFeatureSectionContainer = styled.div`
   display: flex;
   flex-direction: column;
-  border-top: 0.15rem solid #f7a781;
-  border-bottom: 0.15rem solid #f7a781;
+
   width: 100%;
 `;
 
