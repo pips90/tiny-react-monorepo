@@ -55,3 +55,27 @@ export const AuroraCollarSummaryComponent: Story = {
 
   }
 }
+
+export const FeaturedSectionComponent: Story = {
+  render: () => (<>
+    <MemoryRouter initialEntries={["/landing-page"]}>
+      <LandingPage />
+    </MemoryRouter>
+  </>),
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const featuredSectionHeading = canvas.getAllByRole("heading", {level: 1});
+    const featuredSubHeading = canvas.getByText(/and your savings/i);
+    const featMindReading = canvas.getByText(/Mind Reading Technology/i);
+    const featRealTime =  canvas.getByText(/Real Time Translation/i);
+    const featEmotion = canvas.getByText(/Emotion Detection/i);
+    const featBattery = canvas.getByText(/48-Hour Battery/i);
+    expect(featuredSectionHeading[2]).toHaveTextContent(/Features that will/i);
+    expect(featuredSubHeading).toBeVisible();
+    expect(featMindReading).toBeVisible();
+    expect(featRealTime).toBeVisible();
+    expect(featEmotion).toBeVisible();
+    expect(featBattery).toBeVisible();
+
+  }
+};
