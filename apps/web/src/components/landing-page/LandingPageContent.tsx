@@ -1,5 +1,6 @@
 import { AuroraCollarSummary } from "./aurora-collar/AuroraCollarSummary";
 import { FeatureSection } from "./features-section/FeatureSection";
+import { ReviewSection } from "./review-section/ReviewSection";
 import {
   StyledLandingPageContentContainer,
   StyledLandingPageContent,
@@ -39,6 +40,9 @@ export const LandingPageContent = () => {
         </StyledLandingSection>
         <StyledLandingSection>
           <FeatureSection />
+        </StyledLandingSection>
+        <StyledLandingSection>
+          <ReviewSection />
         </StyledLandingSection>
       </StyledLandingPageContent>
     </StyledLandingPageContentContainer>
